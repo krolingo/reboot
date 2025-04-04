@@ -1,0 +1,3 @@
+#!/bin/sh
+# redirect even doas shutdown
+exec doas fdesetup authrestart
