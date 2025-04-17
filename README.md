@@ -1,9 +1,8 @@
-
-# 🔄 Safe Reboot Scripts for macOS with FileVault
+# Safe Reboot Scripts for macOS with FileVault
 
 This repository provides user-level wrapper scripts for `reboot` and `shutdown` on macOS systems with **FileVault enabled**, ensuring smooth and unattended reboots using Apple’s `fdesetup authrestart`.
 
-## 💡 Why Use These Scripts?
+## Why Use These Scripts?
 
 On FileVault-enabled systems, a normal `reboot` or `shutdown -r now` can cause the system to pause at the FileVault disk unlock screen. This is a problem for:
 
@@ -28,7 +27,7 @@ fdesetup authrestart
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ### 1. Ensure `~/bin` exists and is in your `$PATH`
 
@@ -87,7 +86,7 @@ doas fdesetup authrestart
 
 ---
 
-## 🧪 Verification
+## Verification
 
 Check that your shell resolves the commands correctly:
 
@@ -108,7 +107,7 @@ Both will run the safe reboot command using `fdesetup authrestart`.
 
 ---
 
-## 🧼 Summary
+## Summary
 
 | Command           | Behavior                                   |
 |-------------------|--------------------------------------------|
@@ -118,13 +117,13 @@ Both will run the safe reboot command using `fdesetup authrestart`.
 
 ---
 
-## 🙌 Why Not Aliases?
+## Why Not Aliases?
 
 - Aliases don’t work with `doas`, `sudo`, or from scripts
 - Scripts are portable, reliable, and can be version-controlled
 
 ---
 
-## 👩‍💻 Credits
+## Credits
 
 Created by N0b0d7, inspired by practical needs for remote rebooting of FileVault-enabled Macs.
